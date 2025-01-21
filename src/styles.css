@@ -1,0 +1,62 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.page {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar > div {
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-dark {
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  background-color: white
+  color: black;
+  border-radius: 10px
+}
+
+.btn-light {
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+}
+
+[data-theme = "light"]{
+
+  --bg-color : #ffffff;
+  --text-color : #333333;
+  --heading-color : #444444
+}
+[data-theme = "dark"]{
+
+  --bg-color : #333333;
+  --text-color : #ffffff;
+  --heading-color : #dddddd;
+}
+ body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+ }
+ h1{
+  color : var(--heading-color)
+ }
